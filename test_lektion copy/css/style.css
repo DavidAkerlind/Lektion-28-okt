@@ -1,0 +1,36 @@
+* {
+    margin: 0rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 120px;
+    gap: 1rem;
+}
+
+header {
+    background-color: blueviolet;
+    grid-column: auto / span 6;
+}
+
+main {
+    background-color: chocolate;
+    grid-column: auto / span 4;
+    grid-row: auto / span 4;
+}
+aside {
+    background-color: chartreuse;
+    grid-column: auto / span 2;
+    grid-row: auto / span 4;
+}
+footer {
+    background-color: cornflowerblue;
+    grid-column: auto / span 6;
+}

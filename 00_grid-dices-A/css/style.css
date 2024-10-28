@@ -9,6 +9,7 @@ body {
         sans-serif;
     font-size: 1.4rem;
     color: rgba(0, 0, 0, 0.6);
+    flex-wrap: wrap;
 }
 
 .dice {
@@ -16,12 +17,16 @@ body {
     border: 2px solid #222;
     border-radius: 0.5rem;
     margin: 1rem;
-    display: flex;
-    padding: 1rem;
+    padding: 0.5rem;
     box-sizing: border-box;
 
     /* HÄR KODar DU UPP DIN GRID */
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 80px;
+    height: 80px;
+    gap: 5px;
 }
 
 .dice.faded {
@@ -31,89 +36,50 @@ body {
 .dice aside {
     background: #222;
     border-radius: 99rem;
-    display: none;
+    width: 15px;
+    height: 15px;
+    opacity: 0;
 }
 
-.dice.dots-1 aside:nth-child(1) {
-    display: block;
+.dice.dice.dots-1 aside:nth-child(5) {
+    opacity: 1;
 }
 
-.dice.dots-2 aside:nth-child(1) {
-    display: block;
+.dice.dots-2 aside:nth-child(1),
+.dice.dots-2 aside:nth-child(9) {
+    opacity: 1;
 }
 
-.dice.dots-2 aside:nth-child(2) {
-    display: block;
+/* Tärning 3: Prickar i övre vänster, mitten och nedre höger */
+.dice.dots-3 aside:nth-child(1),
+.dice.dots-3 aside:nth-child(5),
+.dice.dots-3 aside:nth-child(9) {
+    opacity: 1;
 }
 
-.dice.dots-3 aside:nth-child(1) {
-    display: block;
+/* Tärning 4: Prickar i alla fyra hörn */
+.dice.dots-4 aside:nth-child(1),
+.dice.dots-4 aside:nth-child(3),
+.dice.dots-4 aside:nth-child(7),
+.dice.dots-4 aside:nth-child(9) {
+    opacity: 1;
 }
 
-.dice.dots-3 aside:nth-child(2) {
-    display: block;
+/* Tärning 5: Prickar i alla fyra hörn och mitten */
+.dice.dots-5 aside:nth-child(1),
+.dice.dots-5 aside:nth-child(3),
+.dice.dots-5 aside:nth-child(5),
+.dice.dots-5 aside:nth-child(7),
+.dice.dots-5 aside:nth-child(9) {
+    opacity: 1;
 }
 
-.dice.dots-3 aside:nth-child(3) {
-    display: block;
-}
-
-.dice.dots-4 aside:nth-child(1) {
-    display: block;
-}
-
-.dice.dots-4 aside:nth-child(2) {
-    display: block;
-}
-
-.dice.dots-4 aside:nth-child(3) {
-    display: block;
-}
-
-.dice.dots-4 aside:nth-child(4) {
-    display: block;
-}
-
-.dice.dots-5 aside:nth-child(1) {
-    display: block;
-}
-
-.dice.dots-5 aside:nth-child(2) {
-    display: block;
-}
-
-.dice.dots-5 aside:nth-child(3) {
-    display: block;
-}
-
-.dice.dots-5 aside:nth-child(4) {
-    display: block;
-}
-
-.dice.dots-5 aside:nth-child(5) {
-    display: block;
-}
-
-.dice.dots-6 aside:nth-child(1) {
-    display: block;
-}
-
-.dice.dots-6 aside:nth-child(2) {
-    display: block;
-}
-
-.dice.dots-6 aside:nth-child(3) {
-    display: block;
-}
-
-.dice.dots-6 aside:nth-child(4) {
-    display: block;
-}
-
-.dice.dots-6 aside:nth-child(5) {
-    display: block;
-}
-
-.dice.dots-6 aside:nth-child(6) {
-    display: block;
+/* Tärning 6: Prickar i de två vänstra och högra kolumnerna på varje rad */
+.dice.dots-6 aside:nth-child(1),
+.dice.dots-6 aside:nth-child(3),
+.dice.dots-6 aside:nth-child(4),
+.dice.dots-6 aside:nth-child(6),
+.dice.dots-6 aside:nth-child(7),
+.dice.dots-6 aside:nth-child(9) {
+    opacity: 1;
 }
