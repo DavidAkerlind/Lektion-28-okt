@@ -5,25 +5,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
     font-size: 1.4rem;
-    color: rgba(0, 0, 0, .6);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .dice {
     background: #fff;
     border: 2px solid #222;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     margin: 1rem;
     display: flex;
     padding: 1rem;
     box-sizing: border-box;
 
     /* HÄR KODAR DU UPP DIN GRID */
+    display: grid;
 }
 
 .dice.faded {
-    opacity: .2;
+    opacity: 0.2;
 }
 
 .dice aside {
@@ -34,126 +36,84 @@ body {
 
 .dice.dots-1 aside:nth-child(1) {
     display: block;
-
-    
 }
 
 .dice.dots-2 aside:nth-child(1) {
     display: block;
-
-    
 }
 
 .dice.dots-2 aside:nth-child(2) {
     display: block;
- 
-    
 }
 
 .dice.dots-3 aside:nth-child(1) {
     display: block;
-
-    
 }
 
 .dice.dots-3 aside:nth-child(2) {
     display: block;
-
-    
 }
 
 .dice.dots-3 aside:nth-child(3) {
     display: block;
-
-    
 }
 
 .dice.dots-4 aside:nth-child(1) {
     display: block;
-
-    
 }
 
 .dice.dots-4 aside:nth-child(2) {
     display: block;
-
-    
 }
 
 .dice.dots-4 aside:nth-child(3) {
     display: block;
-
-    
 }
 
 .dice.dots-4 aside:nth-child(4) {
     display: block;
-
-    
 }
 
 .dice.dots-5 aside:nth-child(1) {
     display: block;
-
-    
 }
 
 .dice.dots-5 aside:nth-child(2) {
     display: block;
-
-    
 }
 
 .dice.dots-5 aside:nth-child(3) {
     display: block;
-
-    
 }
 
 .dice.dots-5 aside:nth-child(4) {
     display: block;
-
-    
 }
 
 .dice.dots-5 aside:nth-child(5) {
     display: block;
-
-    
 }
 
 .dice.dots-6 aside:nth-child(1) {
     display: block;
-
-    
 }
 
 .dice.dots-6 aside:nth-child(2) {
     display: block;
-
-    
 }
 
 .dice.dots-6 aside:nth-child(3) {
     display: block;
-
-    
 }
 
 .dice.dots-6 aside:nth-child(4) {
     display: block;
-
-    
 }
 
 .dice.dots-6 aside:nth-child(5) {
     display: block;
-
-    
 }
 
 .dice.dots-6 aside:nth-child(6) {
     display: block;
-
-    
 }
